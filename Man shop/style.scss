@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Post-No-Bills-Jaffna-SemiBold';
+    src:url('fonts/webfonts_Post-No-Bills-Jaffna-SemiBold/Post-No-Bills-Jaffna-SemiBold.ttf.woff') format('woff'),
+        url('fonts/webfonts_Post-No-Bills-Jaffna-SemiBold/Post-No-Bills-Jaffna-SemiBold.ttf.svg') format('svg'),
+        url('fonts/webfonts_Post-No-Bills-Jaffna-SemiBold/Post-No-Bills-Jaffna-SemiBold.ttf.eot'),
+        url('fonts/webfonts_Post-No-Bills-Jaffna-SemiBold/Post-No-Bills-Jaffna-SemiBold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #000;
+}
+.container {
+    max-width: 1142px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.secondBg {
+    background: #0f0f0f;
+}
+
+.smallText {
+    font-variant: oldstyle-nums;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer {
+    background: url(img/footer/bg.png) no-repeat center/cover;
+    padding: 80px 0 100px;
+    color: white;
+    &Wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@import "blocks/topInfo";
+@import "blocks/shedule";
+@import "blocks/login";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/mainNav";
+@import "blocks/brandDesc";
+@import "blocks/brandName";
+@import "blocks/showcase";
+@import "blocks/prevSeason";
+@import "blocks/clock";
+@import "blocks/newCollection";
+@import "blocks/collection2018";
+@import "blocks/newArrivals";
+@import "blocks/ourBrands";
+@import "blocks/about";
+@import "blocks/categories";
+@import "blocks/subscribe";
+@import "blocks/copyright";

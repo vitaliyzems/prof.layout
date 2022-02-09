@@ -1,0 +1,8 @@
+.b-showcase {
+    display: grid;
+    grid-template-columns: 880px 1fr 880px;
+    grid-template-rows: auto auto;
+    &__suitBg {
+        background: url(img/suitBg/suit.png);
+    }
+}
