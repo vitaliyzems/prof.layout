@@ -1,0 +1,464 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Post-No-Bills-Jaffna-SemiBold';
+  src: url("fonts/webfonts_Post-No-Bills-Jaffna-SemiBold/Post-No-Bills-Jaffna-SemiBold.ttf.woff") format("woff"), url("fonts/webfonts_Post-No-Bills-Jaffna-SemiBold/Post-No-Bills-Jaffna-SemiBold.ttf.svg") format("svg"), url("fonts/webfonts_Post-No-Bills-Jaffna-SemiBold/Post-No-Bills-Jaffna-SemiBold.ttf.eot"), url("fonts/webfonts_Post-No-Bills-Jaffna-SemiBold/Post-No-Bills-Jaffna-SemiBold.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: #000;
+}
+
+.container {
+  max-width: 1142px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.secondBg {
+  background: #0f0f0f;
+}
+
+.smallText {
+  font-variant: oldstyle-nums;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.footer {
+  background: url(img/footer/bg.png) no-repeat center/cover;
+  padding: 80px 0 100px;
+  color: white;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-topInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-topInfo__login {
+  position: relative;
+  right: 0;
+}
+
+.b-shedule {
+  display: flex;
+  width: 375px;
+  height: 44px;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.b-shedule__content:nth-of-type(n+2)::before {
+  content: "|";
+  display: inline-block;
+  padding-right: 12px;
+}
+
+.b-login {
+  width: 130px;
+  color: gray;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.b-header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.b-header__mainNav_padLeft {
+  padding-left: 18px;
+}
+
+.b-logo {
+  font-family: 'Post-No-Bills-Jaffna-SemiBold';
+  font-size: 36px;
+  color: #FFFFFF;
+}
+
+.b-mainNav {
+  display: flex;
+  justify-content: space-between;
+  width: 555px;
+}
+
+.b-mainNav__buttons {
+  display: flex;
+}
+
+.b-mainNav__item {
+  padding: 0 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 80px;
+}
+
+.b-mainNav__item:hover {
+  background: #1f1f1f;
+}
+
+.b-mainNav__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75px;
+}
+
+.b-mainNav__icon {
+  transition-duration: .5s;
+  cursor: pointer;
+}
+
+.b-mainNav__icon:hover {
+  transform: scale(2);
+}
+
+.b-brandDesc {
+  background: url(img/brandDesc/background.png) no-repeat center/cover;
+  padding: 160px 0 154px;
+}
+
+.b-brandDesc__text {
+  width: 730px;
+  margin: 80px auto 0;
+  color: white;
+  font-family: PT Sans;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.b-brandName {
+  width: 320px;
+  height: 320px;
+  margin: 0 auto;
+  border: 4px solid white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.b-brandName__heading {
+  font-family: 'Post-No-Bills-Jaffna-SemiBold';
+  border-bottom: 2px solid white;
+  font-size: 64px;
+  line-height: 70px;
+}
+
+.b-brandName__text {
+  font-size: 22px;
+  line-height: 50px;
+  font-weight: 100;
+  font-family: monospace;
+  letter-spacing: 0.4px;
+}
+
+.b-showcase {
+  display: grid;
+  grid-template-columns: 880px 1fr 880px;
+  grid-template-rows: auto auto;
+}
+
+.b-showcase__suitBg {
+  background: url(img/suitBg/suit.png);
+}
+
+.b-prevSeason {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto auto;
+  gap: 50px;
+  justify-content: center;
+  padding: 95px 80px;
+  grid-column: 1 / 3;
+}
+
+.b-prevSeason__heading {
+  grid-column: 1 / 4;
+  color: white;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.b-prevSeason__heading::after {
+  content: "";
+  display: block;
+  width: 120px;
+  border-top: 1px solid #fff;
+  margin: 40px auto 0;
+}
+
+.b-clock {
+  color: white;
+  width: 260px;
+}
+
+.b-clock__Bg {
+  height: 325px;
+  background: #191B1C;
+  display: flex;
+  justify-content: center;
+}
+
+.b-clock__img {
+  display: block;
+  align-self: center;
+}
+
+.b-clock__name {
+  font-size: 18px;
+  line-height: 21px;
+  padding-top: 25px;
+}
+
+.b-clock__price {
+  font-size: 16px;
+  line-height: 19px;
+  color: #d0d0d0;
+  padding-top: 10px;
+}
+
+.b-newCollection {
+  background: url(img/newCollection/bg.png) no-repeat center/cover;
+  color: white;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.b-newCollection__heading {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.b-newCollection__heading::after {
+  content: "";
+  display: block;
+  width: 120px;
+  border-top: 1px solid #fff;
+  margin: 20px auto 30px;
+}
+
+.b-newCollection__button {
+  border: 1px solid #fff;
+  width: 140px;
+  text-align: center;
+  padding: 15px 0;
+  transition-duration: .5s;
+}
+
+.b-newCollection__button:hover {
+  cursor: pointer;
+  background: rgba(251, 251, 251, 0.3);
+}
+
+.b-collection2018 {
+  color: white;
+  height: 600px;
+  grid-column: 2 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.b-collection2018__heading {
+  font-size: 36px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.b-collection2018__line {
+  width: 120px;
+  border-top: 1px solid white;
+}
+
+.b-collection2018__text {
+  font-size: 14px;
+  line-height: 21px;
+  width: 471px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 61px;
+  letter-spacing: 0.5px;
+}
+
+.b-collection2018__button {
+  width: 311px;
+  height: 47px;
+  text-align: center;
+  border: 1px solid white;
+  font-size: 18px;
+  line-height: 47px;
+}
+
+.b-newArrivals {
+  color: white;
+  padding: 120px 0 150px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-row-gap: 40px;
+}
+
+.b-newArrivals__heading {
+  grid-column: 1 / -1;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.b-newArrivals__heading::after {
+  content: "";
+  display: block;
+  margin: 40px auto 40px;
+  width: 120px;
+  height: 1px;
+  background-color: white;
+}
+
+.b-ourBrands {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-between;
+  padding: 60px 0 80px;
+}
+
+.b-ourBrands__heading {
+  grid-column: 1 / -1;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.b-ourBrands__heading::after {
+  content: "";
+  display: block;
+  width: 120px;
+  border-top: 1px solid #fff;
+  margin: 40px auto;
+}
+
+.b-about {
+  width: 350px;
+}
+
+.b-about__heading {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+.b-about__text {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.b-categories {
+  width: 382px;
+  padding-left: 10px;
+}
+
+.b-categories__heading {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.b-categories__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.b-categories__item {
+  background: #0f0f0f;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 21px;
+  margin-right: 20px;
+}
+
+.b-categories__item:nth-child(n+4) {
+  margin-top: 20px;
+}
+
+.b-categories__item:nth-child(3), .b-categories__item:nth-child(5) {
+  margin-right: 0;
+}
+
+.b-subscribe {
+  width: 350px;
+}
+
+.b-subscribe__heading {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.b-subscribe__text {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 40px 0 37px;
+}
+
+.b-subscribe__email {
+  width: 210px;
+  height: 42px;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  float: left;
+  color: #969696;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0 20px;
+}
+
+.b-subscribe__email::placeholder {
+  color: #969696;
+}
+
+.b-subscribe__button {
+  width: 140px;
+  height: 42px;
+  background: #0f0f0f;
+  border: none;
+  color: white;
+  font-size: 14px;
+}
+
+.b-copyright {
+  color: #d0d0d0;
+  font-size: 12px;
+  line-height: 50px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,8 @@
+.b-topInfo {
+    display: flex;
+    justify-content: space-between;
+    &__login {
+        position: relative;
+        right: 0;
+    }
+}
