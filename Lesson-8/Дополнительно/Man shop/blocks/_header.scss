@@ -1,0 +1,9 @@
+.b-header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__mainNav_padLeft {
+        padding-left: 18px;
+    }
+}

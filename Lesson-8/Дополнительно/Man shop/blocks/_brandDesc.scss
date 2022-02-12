@@ -1,0 +1,23 @@
+.b-brandDesc {
+    background: url(img/brandDesc/background.png) no-repeat center/cover;
+    padding: 160px 0 154px;
+    @media (max-width: 767.98px) {
+        padding: 100px 0 100px;
+    }
+    &__text {
+        max-width: 730px;
+        margin: 80px auto 0;
+        color: white;
+        font-family: PT Sans sans-serif;
+        font-size: 15px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        @media (max-width: 767.98px) {
+            padding-left: 8px;
+            padding-right: 8px;
+            font-size: 10px;
+            line-height: 20px;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.b-collection2018 {
+    color: white;
+    height: 600px;
+    padding-bottom: 100px;
+    grid-column: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    @media (max-width: 767.98px) {
+        height: 500px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 50px;
+    }
+    &__heading {
+        font-size: 36px;
+        padding-bottom: 40px;
+        @media (max-width: 767.98px) {
+            font-size: 24px;
+            padding-bottom: 20px;
+        }
+    }
+    &__line {
+        width: 120px;
+        border-top: 1px solid white;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 21px;
+        max-width: 471px;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 61px;
+        letter-spacing: 0.5px;
+        @media (max-width: 767.98px) {
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+    }
+    &__button {
+        width: 311px;
+        height: 47px;
+        text-align: center;
+        border: 1px solid white;
+        font-size: 18px;
+        line-height: 47px;
+        @media (max-width: 374.98px) {
+            width: 270px;
+        }
+    }
+    @media (max-width: 1365.98px) {
+        grid-column: auto;
+        order: 3;
+    }
+}
