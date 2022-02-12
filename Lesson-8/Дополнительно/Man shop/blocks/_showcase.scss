@@ -1,0 +1,14 @@
+.b-showcase {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 160px) 1fr;
+    grid-template-rows: auto auto;
+    &__suitBg {
+        background: url(img/suitBg/suit.png) top center/cover no-repeat;
+        @media (max-width: 1365.98px) {
+            display: none;
+        }
+    }
+    @media (max-width: 1365.98px) {
+        grid-template-columns: 1fr;
+    }
+}

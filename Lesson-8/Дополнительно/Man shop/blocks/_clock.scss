@@ -1,0 +1,25 @@
+.b-clock {
+    color: white;
+    &__Bg {
+        background: #191B1C;
+        display: flex;
+        justify-content: center;
+        padding: 55.5px 22.5px;
+    }
+    &__img {
+        display: block;
+        align-self: center;
+        width: 100%;
+    }
+    &__name {
+        font-size: 18px;
+        line-height: 21px;
+        padding-top: 25px;
+    }
+    &__price {
+        font-size: 16px;
+        line-height: 19px;
+        color: #d0d0d0;
+        padding-top: 10px;
+    }
+}
