@@ -1,0 +1,33 @@
+.b-ourBrands {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    @media (max-width: 1141.98px) {
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-evenly;
+    }
+    @media (max-width: 767.98px) {
+        grid-template-columns: 1fr;
+    }
+    &__heading {
+        grid-column: 1 / -1;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        &::after {
+            content: "";
+            display: block;
+            width: 120px;
+            border-top: 1px solid #fff;
+            margin: 40px auto;
+        }
+    }
+    &__item {
+        @media (max-width: 767.98px) {
+            justify-self: center;
+        }
+    }
+}

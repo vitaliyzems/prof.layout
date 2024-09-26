@@ -1,0 +1,25 @@
+.b-shedule {
+    display: flex;
+    width: 375px;
+    height: 44px;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    font-size: 12px;
+    line-height: 16px;
+    margin-right: 20px;
+    &__content {
+        &:nth-of-type(n+2)::before {
+            content: "|";
+            display: inline-block;
+            padding-right: 12px;
+        }
+    }
+    @media (max-width: 767.98px) {
+        margin-right: 0;
+        flex-grow: 1;
+    }
+    @media (max-width: 374.98px) {
+        font-size: 9px;
+    }
+}
