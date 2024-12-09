@@ -1,0 +1,23 @@
+.b-newArrivals {
+    color: white;
+    padding: 120px 0 150px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 40px;
+    &__heading {
+        grid-column: 1 / -1;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        &::after {
+            content: "";
+            display: block;
+            margin: 40px auto 40px;
+            width: 120px;
+            height: 1px;
+            background-color: white;
+        }
+    }
+}
